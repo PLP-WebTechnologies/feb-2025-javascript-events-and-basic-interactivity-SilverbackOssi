@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JS Event Playground 🎮</h1>
+  </header>
+
+  <main>
+    <!-- Interactive Button -->
+    <section>
+      <h2>1. Button & Event Handling</h2>
+      <button id="magicButton">Click Me!</button>
+      <p id="buttonOutput"></p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section>
+      <h2>2. Image Gallery</h2>
+      <div class="gallery">
+        <img src="https://placekitten.com/200/200" alt="Kitten 1" />
+        <img src="https://placekitten.com/201/200" alt="Kitten 2" />
+        <img src="https://placekitten.com/202/200" alt="Kitten 3" />
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section>
+      <h2>3. Tabs</h2>
+      <div class="tabs">
+        <button class="tab" data-tab="1">Tab 1</button>
+        <button class="tab" data-tab="2">Tab 2</button>
+        <button class="tab" data-tab="3">Tab 3</button>
+        <div class="tab-content" id="tab-1">Content for Tab 1</div>
+        <div class="tab-content" id="tab-2" style="display:none;">Content for Tab 2</div>
+        <div class="tab-content" id="tab-3" style="display:none;">Content for Tab 3</div>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>4. Sign Up Form</h2>
+      <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💡 and JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
